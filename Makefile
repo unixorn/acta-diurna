@@ -1,6 +1,7 @@
 #
 # Package acta-diurna into an RPM
 
+# git rev-list HEAD --count
 help:
 	@echo "Available make targets:"
 	@echo
@@ -34,6 +35,7 @@ rpm: fakeroot-permfix
 		-n acta-diurna \
 		--version 0.1 \
 		--license BSD \
+		--iteration $(shell git rev-list HEAD --count) \
 		--description "Acta-Diurna creates /etc/motd from scripts. See https://github.com/unixorn/acta-diurna for details" \
 		-C fakeroot \
 		usr
