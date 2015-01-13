@@ -62,7 +62,6 @@ def walkTree(updateDirectory='/etc/update-motd.d'):
       if is_executable(commandPath):
         motdData = motdData + subprocess.check_output(commandPath)
       else:
-        print "commandPath: %s - raw file" % commandPath
         with open(commandPath, 'r') as rawFile:
           motdData = motdData + rawFile.read()
     if os.path.isdir(commandPath):
