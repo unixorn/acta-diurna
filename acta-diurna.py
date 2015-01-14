@@ -56,6 +56,7 @@ def walkTree(updateDirectory='/etc/update-motd.d'):
   motdData=""
 
   fragmentList = os.listdir(updateDirectory)
+  fragmentList.sort()
   for cmd in fragmentList:
     commandPath = "%s/%s" % (updateDirectory, cmd)
     if os.path.isfile(commandPath):
