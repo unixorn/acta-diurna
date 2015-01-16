@@ -1,7 +1,6 @@
 #
 # Package acta-diurna into an RPM
 
-# git rev-list HEAD --count
 help:
 	@echo "Available make targets:"
 	@echo
