@@ -1,6 +1,7 @@
 # Acta-Diurna
 
 [![Code Climate](https://codeclimate.com/github/unixorn/acta-diurna/badges/gpa.svg)](https://codeclimate.com/github/unixorn/acta-diurna)
+[![Issue Count](https://codeclimate.com/github/unixorn/acta-diurna/badges/issue_count.svg)](https://codeclimate.com/github/unixorn/acta-diurna)
 
 Acta Diurna is a script to generate an motd file from a directory (`etc/update-motd.d` by default) full of text files and executables. I liked the functionality of update-motd on Amazon linux, and wanted something I could run on CentOS and OS X at work.
 
